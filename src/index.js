@@ -1,13 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider
+} from "react-router-dom";
+
+import Bookstore from './routers/bookstore'
+import Categories from './routers/categories'
+
+
+
+const router = createBrowserRouter([
+  {
+    path: "/bookstore",
+    element: <Bookstore />,
+  },
+  {
+    path: "/categories",
+    element: <Categories />,
+  },
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}>
+    </RouterProvider>
   </React.StrictMode>
 );
 
