@@ -1,12 +1,10 @@
-import App from "../App";
+import App from '../App';
 
-const Categories = () => {
-  return (
-    <>
-      <App />
-      <h1>Under construction</h1>
-    </>
-  )
-}
+const Categories = () => (
+  <>
+    <App />
+    <h1>Under construction</h1>
+  </>
+);
 
 export default Categories;

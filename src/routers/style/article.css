@@ -1,7 +1,10 @@
-.article-category, .article-writer, .article-comments-button, .article-remove-button, .article-edit-button {
+.article-category,
+.article-writer,
+.article-comments-button,
+.article-remove-button,
+.article-edit-button {
   font-size: 0.875rem;
-  
- font-weight: 300;
+  font-weight: 300;
 }
 
 .article-title {
@@ -9,10 +12,10 @@
 }
 
 .article-div2 {
- display: flex;
- flex-direction: row;
- width: 13.876rem;
- justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  width: 13.876rem;
+  justify-content: space-between;
 }
 
 .article-completed-number {
@@ -20,7 +23,8 @@
   font-weight: 400;
 }
 
-.article-completed-book, .article-current-chapter {
+.article-completed-book,
+.article-current-chapter {
   font-size: 0.875rem;
   font-weight: 300;
 }
