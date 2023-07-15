@@ -1,0 +1,45 @@
+.article-category,
+.article-writer,
+.article-comments-button,
+.article-remove-button,
+.article-edit-button {
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.article-title {
+  font-size: 1.375rem;
+}
+
+.article-div2 {
+  display: flex;
+  flex-direction: row;
+  width: 13.876rem;
+  justify-content: space-between;
+}
+
+.article-completed-number {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.article-completed-book,
+.article-current-chapter {
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.article-chapter {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.article-chapter-button {
+  width: 11.5rem;
+  height: 2rem;
+  color: #fff;
+  font-size: 0.813rem;
+  background-color: #0290ff;
+  border: none;
+  border-radius: 3px;
+}
