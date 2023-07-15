@@ -178,4 +178,4 @@ We would like to thank Microverse to have this opportunity, and also thank you t
 
 This project is [MIT](./LICENSE.md) licensed.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="https://github.com/Zven94/Bookstore/blob/dev-page/LICENSE">back to top</a>)</p>
