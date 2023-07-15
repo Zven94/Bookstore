@@ -6,8 +6,8 @@ function App() {
     <header className="display-flex-row header">
       <div className="header-div">
         <h1 className="header-h1">Bookstore CMS</h1>
-        <Link to="bookstore">Bookstore</Link>
-        <Link to="bookstore">Categories</Link>
+        <Link to="/">Bookstore</Link>
+        <Link to="categories">Categories</Link>
       </div>
       <span className="header-span">Profile Picture</span>
     </header>

@@ -1,5 +1,5 @@
 import App from '../App';
-import AddNewBook from './modules/newBook';
+import AddNewBook from './components/newBook';
 
 const Bookstore = () => (
   <>
