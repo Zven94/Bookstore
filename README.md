@@ -5,7 +5,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Math Magicians Project ](#about-project-)
+- [📖 Bookstore Project ](#about-project-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -28,8 +28,8 @@
 
 # 📖 BookStore Project <a name="about-project"></a>
 
-This is our Microverse **BookStore Project** site, featuring an Art Gallery using HTML, CSS and React.js.
-The site is a SPA, it's a **Create a BookStore**. This app is aviable to solve every math calculation like: addition, substraction, multiplication and division.
+This is our Microverse **BookStore Project** site, featuring a Book List using HTML, CSS and React.js.
+The site is a SPA, it's a **Create a BookStore**.
 
 ## 🛠 Built With <a name="built-with"></a>
 
