@@ -12,7 +12,7 @@ import Categories from './routers/categories';
 
 const router = createBrowserRouter([
   {
-    path: '/bookstore',
+    path: '/',
     element: <Bookstore />,
   },
   {
