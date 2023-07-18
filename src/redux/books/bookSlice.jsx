@@ -1,21 +1,21 @@
-import { createSlice } from "@reduxjs/toolkit"
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  books_arr: [],
-  categories_arr: []
-}
+  booksArr: [],
+  categoriesArr: [],
+};
 
-//Includes an array of books
+// Includes an array of books
 
-export const bookSlice = createSlice({
+const bookSlice = createSlice({
   name: 'books',
   initialState,
   reducers: {
-    addBook: (book_id) => {
-      books_arr.push(book_id)
+    addBook: () => {
     },
-    removeBook: (book_id) => {
-      books_arr.splice(book_arr.indexOf(book_id))
-    }
-  }
-})
+    removeBook: () => {
+    },
+  },
+});
+
+export default bookSlice;
