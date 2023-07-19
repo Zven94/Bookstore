@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 
 const ReloadList = ({ bookData, delBook }) => (
   <li key={bookData}>
-    {console.log(bookData.id)}
     <h2 className="article-category">{bookData.id}</h2>
     <h2 className="article-title">
       {bookData.title}
