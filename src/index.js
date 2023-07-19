@@ -10,7 +10,7 @@ import reportWebVitals from './reportWebVitals';
 
 import Bookstore from './routers/bookstore';
 import Categories from './routers/categories';
-import store from './redux/store.js';
+import configureStore from './redux/store';
 
 const router = createBrowserRouter([
   {
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
+    <Provider store={configureStore}>
       <RouterProvider router={router} />
     </Provider>
   </React.StrictMode>,

@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
 
-const ReloadList = ({ listKey, bookData, delBook }) => (
-  <li key={listKey}>
-    <h2 className="article-category">{listKey}</h2>
+const ReloadList = ({ bookData, delBook }) => (
+  <li key={bookData}>
+    {console.log(bookData.id)}
+    <h2 className="article-category">{bookData.id}</h2>
     <h2 className="article-title">
       {bookData.title}
       {' '}
@@ -20,7 +21,6 @@ const ReloadList = ({ listKey, bookData, delBook }) => (
 );
 
 ReloadList.propTypes = {
-  listKey: PropTypes.number.isRequired,
   bookData: PropTypes.shape({
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,

@@ -8,6 +8,11 @@ const AddNewBook = () => {
       title: '',
       author: '',
     },
+    {
+      id: Math.floor(Math.random() * (9999 - 1000)),
+      title: '',
+      author: '',
+    },
   ]);
 
   const [title, setTitle] = useState('');
