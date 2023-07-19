@@ -4,8 +4,12 @@ const initialState = {
   categories_arr: [],
 };
 
-const underConstructionReducer = () => (
-  <h3>Under Construction</h3>
+const underConstructionReducer = (state, action) => (
+  state.categories_arr =
+        action.payload === "Under construction"
+          ? "Under construction"
+          : state.categories
+
 );
 
 // Includes an array of categories
@@ -18,4 +22,4 @@ const categoriesSlice = createSlice({
   },
 });
 
-export default categoriesSlice;
+export default categoriesSlice.reducer;
