@@ -4,13 +4,10 @@ const initialState = {
   categories_arr: [],
 };
 
-const underConstructionReducer = (state, action) => (
-  state.categories_arr =
-        action.payload === "Under construction"
-          ? "Under construction"
-          : state.categories
-
-);
+const underConstructionReducer = (state, action) => ({
+  ...state,
+  categories_arr: action.payload === 'Under construction' ? 'Under construction' : state.categories,
+});
 
 // Includes an array of categories
 
