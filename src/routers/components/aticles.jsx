@@ -16,7 +16,12 @@ const BookList = ({ booksProps, setBook, delBook }) => (
 );
 
 BookList.propTypes = {
-  booksProps: PropTypes.arrayOf(PropTypes.func).isRequired,
+  booksProps: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      // Add other properties and their corresponding prop types here
+    }),
+  ).isRequired,
   setBook: PropTypes.func.isRequired,
   delBook: PropTypes.func.isRequired,
 };
