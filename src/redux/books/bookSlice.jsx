@@ -22,7 +22,6 @@ const initialState = {
 };
 
 // Includes an array of books
-/* eslint-disable no-param-reassign */
 const bookSlice = createSlice({
   name: 'books',
   initialState,
@@ -38,13 +37,15 @@ const bookSlice = createSlice({
 
       if (!isDuplicate) {
         state.booksArr.push(newBook);
+        return state;
       }
+      return state;
     },
-    removeBook: (state, action) => {
-      state.booksArr = state.booksArr.filter((book) => book.item_id !== action.payload);
-    },
+    removeBook: (state, action) => ({
+      ...state,
+      booksArr: state.booksArr.filter((book) => book.item_id !== action.payload),
+    }),
   },
 });
-/* eslint-enable no-param-reassign */
 export const { addBook, removeBook } = bookSlice.actions;
 export default bookSlice.reducer;
