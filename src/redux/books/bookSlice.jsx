@@ -33,7 +33,12 @@ const bookSlice = createSlice({
         ...action.payload,
       };
 
-      state.booksArr.push(newBook);
+      const isDuplicate = state.booksArr.some((book) => book.title === newBook.title
+        && book.author === newBook.author);
+
+      if (!isDuplicate) {
+        state.booksArr.push(newBook);
+      }
     },
     removeBook: (state, action) => {
       state.booksArr = state.booksArr.filter((book) => book.item_id !== action.payload);
