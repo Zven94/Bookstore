@@ -1,5 +1,10 @@
 <a name="readme-top"></a>
 
+<div align="center">
+<h2 style="display: flex; align-items: center; text-align: center;"><img src="logo-no-circle.png" alt="logo" width="80"  height="auto" />Libra</h2>
+</div>
+
+
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents

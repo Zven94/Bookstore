@@ -1,56 +1,36 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import BookList from './aticles';
+import { addBook } from '../../redux/books/bookSlice';
 
 const AddNewBook = () => {
-  const [book, setBook] = useState([
-    {
-      id: Math.floor(Math.random() * (9999 - 1000)),
-      title: '',
-      author: '',
-    },
-    {
-      id: Math.floor(Math.random() * (9999 - 1000)),
-      title: '',
-      author: '',
-    },
-  ]);
+  const dispatch = useDispatch();
 
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
-
-  const handleChangeTitle = (e) => {
-    setTitle(e.target.value);
-  };
-
-  const handleChangeAuthor = (e) => {
-    setAuthor(e.target.value);
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const newBook = {
-      id: Math.floor(Math.random() * (9999 - 1000)),
       title,
       author,
+      category: '',
     };
-    setBook([...book, newBook]);
-  };
 
-  const delBook = (id) => {
-    setBook([
-      ...book.filter((book) => book.id !== id),
-    ]);
+    dispatch(addBook(newBook));
+    setTitle('');
+    setAuthor('');
   };
 
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="input the book title" onChange={handleChangeTitle} />
-        <input type="text" placeholder="input the book author" onChange={handleChangeAuthor} />
+        <input type="text" placeholder="input the book title" onChange={(e) => setTitle(e.target.value)} value={title} />
+        <input type="text" placeholder="input the book author" onChange={(e) => setAuthor(e.target.value)} value={author} />
         <button type="submit">Add Book</button>
       </form>
-      <BookList booksProps={book} setBook={setBook} delBook={delBook} />
+      <BookList />
     </div>
   );
 };
