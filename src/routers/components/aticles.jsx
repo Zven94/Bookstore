@@ -1,29 +1,21 @@
+import { useSelector } from 'react-redux';
 import '../style/article.css';
-import PropTypes from 'prop-types';
 import ReloadList from './addingBook';
 
-const BookList = ({ booksProps, setBook, delBook }) => (
-  <ul>
-    {booksProps.map((book) => (
+const BookList = () => {
+  const booksArr = useSelector((state) => state.books.booksArr);
 
-      <article key={book.id} className="display-flex-row bookstore-article">
-        <div>
-          <ReloadList key={book.id} bookData={book} setBook={setBook} delBook={delBook} />
-        </div>
-      </article>
-    ))}
-  </ul>
-);
+  return (
+    <ul>
+      {booksArr.map((book) => (
 
-BookList.propTypes = {
-  booksProps: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      // Add other properties and their corresponding prop types here
-    }),
-  ).isRequired,
-  setBook: PropTypes.func.isRequired,
-  delBook: PropTypes.func.isRequired,
+        <article key={book.item_id} className="display-flex-row bookstore-article">
+          <div>
+            <ReloadList key={book.item_id} bookData={book} />
+          </div>
+        </article>
+      ))}
+    </ul>
+  );
 };
-
 export default BookList;
