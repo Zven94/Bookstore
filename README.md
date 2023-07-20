@@ -1,7 +1,9 @@
 <a name="readme-top"></a>
 
-<img src="logo-no-circle.png" alt="logo" width="140"  height="auto" />
-<h2>Libra</h2>
+<div align="center">
+
+<h2><img src="logo-no-circle.png" alt="logo" width="140"  height="auto" />Libra</h2>
+</div>
 
 
 <!-- TABLE OF CONTENTS -->
