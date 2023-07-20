@@ -1,8 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
-<h2><img src="logo-no-circle.png" alt="logo" width="140"  height="auto" />Libra</h2>
+<h2 style="display: flex; align-items: center;"><img src="logo-no-circle.png" alt="logo" width="100"  height="auto" />Libra</h2>
 </div>
 
 
