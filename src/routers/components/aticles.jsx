@@ -1,17 +1,32 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { fetchBooks, AllBooks } from '../../redux/books/bookSlice';
 import '../style/article.css';
 import ReloadList from './addingBook';
 
 const BookList = () => {
-  const booksArr = useSelector((state) => state.books.booksArr);
+  // const booksArr = useSelector((state) => state.books.booksArr);
+
+  const dispatch = useDispatch();
+  const books = useSelector(AllBooks);
+
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, [dispatch, books]);
+
+  if (!books) {
+    return null;
+  }
 
   return (
     <ul>
-      {booksArr.map((book) => (
+      {books.map((book) => (
 
         <article key={book.item_id} className="display-flex-row bookstore-article">
           <div>
+
             <ReloadList key={book.item_id} bookData={book} />
+
           </div>
         </article>
       ))}

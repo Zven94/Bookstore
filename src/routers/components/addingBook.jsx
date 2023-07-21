@@ -33,7 +33,7 @@ ReloadList.propTypes = {
   bookData: PropTypes.shape({
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
-    item_id: PropTypes.number.isRequired,
+    item_id: PropTypes.string.isRequired,
   }).isRequired,
 };
 

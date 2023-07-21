@@ -26,8 +26,8 @@ const AddNewBook = () => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="input the book title" onChange={(e) => setTitle(e.target.value)} value={title} />
-        <input type="text" placeholder="input the book author" onChange={(e) => setAuthor(e.target.value)} value={author} />
+        <input type="text" placeholder="input the book title" onChange={(e) => setTitle(e.target.value)} value={title} required />
+        <input type="text" placeholder="input the book author" onChange={(e) => setAuthor(e.target.value)} value={author} required />
         <button type="submit">Add Book</button>
       </form>
       <BookList />
