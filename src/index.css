@@ -144,12 +144,22 @@ button {
   color: #4386bf;
 }
 
+.grey-border {
+  padding-right: 20px;
+  border-right: 1px solid #e8e8e8;
+}
+
 .article-comments-button,
 .article-remove-button {
   color: #4386bf;
-  padding-right: 20px;
-  border-right: 1px solid #e8e8e8;
+
   height: 1.5rem;
+}
+
+.article-remove-button:hover {
+  background-color: #4386bf;
+  color: #fff;
+  border-radius: 3px;
 }
 
 .article-edit-button {
