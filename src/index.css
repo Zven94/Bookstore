@@ -17,6 +17,7 @@ body {
     'Fira Sans',
     'Droid Sans',
     'Helvetica Neue',
+    'Montserrat',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -33,9 +34,23 @@ code {
     monospace;
 }
 
+button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+
 .header {
   width: 87.5%;
   background-color: #fff;
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border: 2px solid #e8e8e8;
+  border-radius: 75px;
 }
 
 .header-div {
@@ -66,12 +81,17 @@ code {
   align-items: center;
 }
 
+.divider {
+  width: 100%;
+}
+
 .display-flex-column,
 #root {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
 .bookstore-div {
@@ -84,14 +104,159 @@ code {
   align-items: center;
 }
 
+.article-container {
+  width: 100%;
+}
+
 .bookstore-article {
   margin-top: 2.375rem;
   width: 87.71%;
-  height: 10.625rem;
+  height: 7.625rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
   padding: 1.688rem;
+  border: solid 1px #e8e8e8;
+  border-radius: 4px;
+}
+
+.article-li {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.article-id {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #121212;
+  opacity: 0.5;
+}
+
+.article-title {
+  margin: 0;
+}
+
+.article-writer {
+  margin: 0;
+  color: #4386bf;
+}
+
+.article-comments-button,
+.article-remove-button {
+  color: #4386bf;
+  padding-right: 20px;
+  border-right: 1px solid #e8e8e8;
+  height: 1.5rem;
+}
+
+.article-edit-button {
+  color: #4386bf;
+  height: 1.5rem;
+}
+
+.book-percentage {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #121212;
+  margin: 0;
+}
+
+.book-status {
+  opacity: 0.5;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.updateProgress-container {
+  border-left: 1px solid #e8e8e8;
+  padding-left: 6rem;
+}
+
+.book-Chapter {
+  color: #121212;
+  opacity: 0.5;
+  font-size: 0.813rem;
+}
+
+.book-currrentChapter {
+  color: #121212;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.book-Update-button {
+  background-color: #0290ff;
+  color: #fff;
+  width: 11.5rem;
+  height: 2.063rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+}
+
+.Oval-2 {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border: 5px solid #307bbe;
+  transform: rotate(45deg);
+  border-color: #307bbe #c4c4c4 #c4c4c4 #c4c4c4;
+}
+
+.display-flex-column {
+  margin-left: 10px;
+}
+
+.div-form-container {
+  margin-top: 2.375rem;
+  width: 90%;
+  height: 7.625rem;
+  border-top: 1px solid #e8e8e8
+}
+
+.div-form-h2 {
+  font-size: 1.25rem;
+  color: #888888;
+  font-weight: 700;
+}
+
+.form-container {
+  justify-content: start;
+}
+
+.title-input {
+  width: 41.5rem;
+  height: 2.813rem;
+  border: 1px solid #e8e8e8;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+  padding-left: 1rem;
+}
+
+.author-input {
+  width: 17.813rem;
+  height: 2.813rem;
+  border: 1px solid #e8e8e8;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+  padding-left: 1rem;
+}
+
+.author-input::placeholder, .title-input::placeholder {
+  color: #c4c4c4;
+}
+
+.submit-input {
+  color: #fff;
+  background-color: #0290ff;
+  width: 11.5rem;
+  height: 2.813rem;
+  padding: 0.801rem 1.188rem;
+  border-radius: 3px;
+  font-size: 1.15rem;
+  font-weight: 400;
 }
