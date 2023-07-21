@@ -4,7 +4,7 @@ import axios from 'axios';
 const initialState = {
   booksArr: [],
   status: 'not started',
-  error: null
+  error: null,
 };
 
 const baseURL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps';
@@ -17,10 +17,12 @@ export const fetchBooks = createAsyncThunk(
     try {
       const response = await axios.get(`${baseURL}/${apiKey}/books`);
       const { data } = response;
+
       const booksData = Object.keys(data).map((key) => ({
         item_id: key,
-        ...data[key][0]
+        ...data[key][0],
       }));
+
       return booksData;
     } catch (error) {
       return Promise.reject(error.message ? error.message : error);
@@ -88,7 +90,7 @@ const bookSlice = createSlice({
       }))
       // the action has created a new book into the list
       .addCase(addBook.fulfilled, (state, action) => {
-       // console.log('imin')
+        // console.log('imin')
         if (action.payload === 'created') {
           return {
             ...state,
@@ -107,10 +109,10 @@ const bookSlice = createSlice({
         }
         return state;
       });
-  }
+  },
 });
 
-//export const { addBook, removeBook } = bookSlice.actions;
+// export const { addBook, removeBook } = bookSlice.actions;
 export const AllBooks = (state) => state.books.books;
 export const getStatus = (state) => state.books.status;
 export const getError = (state) => state.books.error;
