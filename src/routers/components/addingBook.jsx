@@ -10,20 +10,38 @@ const ReloadList = ({ bookData }) => {
   };
 
   return (
-    <li key={bookData.item_id}>
-      <h2 className="article-category">{bookData.item_id}</h2>
-      <h2 className="article-title">
-        {bookData.title}
-        {' '}
-      </h2>
-      <h2 className="article-writer">
-        {bookData.author}
-        {' '}
-      </h2>
-      <div className="article-div2">
-        <button className="article-comments-button" type="submit">Comments</button>
-        <button className="article-remove-button" type="submit" onClick={handleRemove}>Remove</button>
-        <button className="article-edit-button" type="submit">Edit</button>
+    <li key={bookData.item_id} className="display-flex-row article-li">
+      <div>
+        <h2 className="article-id">{bookData.item_id}</h2>
+        <h2 className="article-title">
+          {bookData.title}
+          {' '}
+        </h2>
+        <h2 className="article-writer">
+          {bookData.author}
+          {' '}
+        </h2>
+        <div className="article-div2">
+          <div className="grey-border">
+            <button className="article-comments-button" type="submit">Comments</button>
+          </div>
+          <div className="grey-border">
+            <button className="article-remove-button" type="submit" onClick={handleRemove}>Remove</button>
+          </div>
+          <button className="article-edit-button" type="submit">Edit</button>
+        </div>
+      </div>
+      <div className="display-flex-row book-status-container">
+        <div className="Oval-2" />
+        <div className="display-flex-column">
+          <h2 className="book-percentage">0%</h2>
+          <h2 className="book-status">Completed</h2>
+        </div>
+      </div>
+      <div className="updateProgress-container">
+        <h2 className="book-Chapter">CURRENT CHAPTER</h2>
+        <h2 className="book-currrentChapter">Chapter 1</h2>
+        <button type="submit" className="book-Update-button">UPDATE PROGRESS</button>
       </div>
     </li>
   );

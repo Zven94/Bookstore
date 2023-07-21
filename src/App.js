@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ProfilePic from './assets/logo-no-circle.png';
 import './App.css';
 
 function App() {
@@ -9,7 +10,9 @@ function App() {
         <Link to="/">Bookstore</Link>
         <Link to="categories">Categories</Link>
       </div>
-      <span className="header-span">Profile Picture</span>
+      <span className="header-span">
+        <img src={ProfilePic} alt="" className="profile-picture" />
+      </span>
     </header>
   );
 }

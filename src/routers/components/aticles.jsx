@@ -5,8 +5,6 @@ import '../style/article.css';
 import ReloadList from './addingBook';
 
 const BookList = () => {
-  // const booksArr = useSelector((state) => state.books.booksArr);
-
   const dispatch = useDispatch();
   const books = useSelector(AllBooks);
 
@@ -19,15 +17,13 @@ const BookList = () => {
   }
 
   return (
-    <ul>
+    <ul className="display-flex-column">
       {books.map((book) => (
 
-        <article key={book.item_id} className="display-flex-row bookstore-article">
-          <div>
+        <article key={book.item_id} className="bookstore-article">
 
-            <ReloadList key={book.item_id} bookData={book} />
+          <ReloadList key={book.item_id} bookData={book} />
 
-          </div>
         </article>
       ))}
     </ul>
