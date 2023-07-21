@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.7346fc80.css",
-    "main.js": "/static/js/main.fb099383.js",
-    "static/js/496.b8dca68b.chunk.js": "/static/js/496.b8dca68b.chunk.js",
-    "static/media/logo-no-circle.png": "/static/media/logo-no-circle.634749dc76dcb525d12e.png",
-    "index.html": "/index.html",
-    "main.7346fc80.css.map": "/static/css/main.7346fc80.css.map",
-    "main.fb099383.js.map": "/static/js/main.fb099383.js.map",
-    "496.b8dca68b.chunk.js.map": "/static/js/496.b8dca68b.chunk.js.map"
+    "main.css": "/Bookstore/static/css/main.7346fc80.css",
+    "main.js": "/Bookstore/static/js/main.8c821861.js",
+    "static/js/496.b8dca68b.chunk.js": "/Bookstore/static/js/496.b8dca68b.chunk.js",
+    "static/media/logo-no-circle.png": "/Bookstore/static/media/logo-no-circle.634749dc76dcb525d12e.png",
+    "index.html": "/Bookstore/index.html",
+    "main.7346fc80.css.map": "/Bookstore/static/css/main.7346fc80.css.map",
+    "main.8c821861.js.map": "/Bookstore/static/js/main.8c821861.js.map",
+    "496.b8dca68b.chunk.js.map": "/Bookstore/static/js/496.b8dca68b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7346fc80.css",
-    "static/js/main.fb099383.js"
+    "static/js/main.8c821861.js"
   ]
 }
